@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ConsumerGithubApp</string>
+    <string name="find_username">Find Username</string>
+    <string name="name">Name</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="repositories">Repositories</string>
+    <string name="github_url">Github URL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="setting">Setting</string>
+    <string name="language" translatable="false">language</string>
+    <string name="favorite">Favorite</string>
+</resources>

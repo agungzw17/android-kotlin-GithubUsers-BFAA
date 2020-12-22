@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplikasi Pengguna Github </string>
+    <string name="find_username">Cari Nama Pengguna</string>
+    <string name="name">Nama</string>
+    <string name="followers">Pengikut</string>
+    <string name="following">Mengikuti</string>
+    <string name="repositories">Repositori</string>
+    <string name="github_url">Github URL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="setting">Pengaturan</string>
+    <string name="language">Bahasa</string>
+    <string name="favorite">Favorit</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="country">Indonesia</string>
+    <string name="reminder_9am_summary">Kamu akan menerima notifikasi dari kami</string>
+    <string name="reminder_9am">Ingatkan pada jam 9.00 Pagi</string>
+    <string name="reminder_on">Pengingat diaktifkan</string>
+    <string name="reminder_off">Pengingat dinonaktifkan</string>
+    <string name="reminder_label">Ayo cepat buka aplikasinya bung</string>
+</resources>

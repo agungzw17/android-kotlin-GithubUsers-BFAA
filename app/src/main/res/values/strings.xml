@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GithubUserApp</string>
+    <string name="find_username">Find Username</string>
+    <string name="name">Name</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="repositories">Repositories</string>
+    <string name="github_url">Github URL</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="setting">Setting</string>
+    <string name="language" translatable="false">language</string>
+    <string name="favorite">Favorite</string>
+    <string name="change_language">Change Language</string>
+    <string name="country">English</string>
+    <string name="reminder" translatable="false">reminder</string>
+    <string name="reminder_9am_summary">You will receive a notification from us</string>
+    <string name="reminder_9am">Reminder at 9.00 AM</string>
+    <string name="reminder_on">Reminder on</string>
+    <string name="reminder_off">Reminder off</string>
+    <string name="reminder_label">Let\'s quickly open the application, man</string>
+
+</resources>

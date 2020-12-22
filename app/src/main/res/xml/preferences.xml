@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:iconSpaceReserved="false">
+    <SwitchPreference
+        android:key="@string/reminder"
+        android:icon="@drawable/ic_notifications"
+        android:summary="@string/reminder_9am_summary"
+        android:switchTextOn="@string/reminder_on"
+        android:switchTextOff="@string/reminder_off"
+        android:title="@string/reminder_9am"/>
+    <Preference
+        android:defaultValue="false"
+        android:key="@string/language"
+        android:icon="@drawable/ic_change_language"
+        android:title="@string/change_language"
+        android:summary="@string/country"/>
+</PreferenceScreen>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:context=".view.DetailActivity">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tv_item_image"
+            android:layout_width="138dp"
+            android:layout_height="107dp"
+            android:src="@drawable/profile_user"
+            app:civ_border_color="#FF909090"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_image"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:id="@+id/tv_item_githubUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_name"
+            android:gravity="center"
+            android:text="@string/github_url"
+            tools:textSize="8sp"
+            tools:ignore="SmallSp"/>
+
+        <TextView
+            android:id="@+id/parent_followers"
+            android:layout_width="133dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/followers"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_githubUrl"
+            tools:ignore="SmallSp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/parent_following"
+            android:layout_width="136dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/following"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/parent_repositories"
+            app:layout_constraintStart_toEndOf="@+id/parent_followers"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_githubUrl"
+            tools:ignore="SmallSp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/parent_repositories"
+            android:layout_width="136dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/repositories"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_item_githubUrl"
+            tools:ignore="SmallSp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/tv_item_following"
+            android:layout_width="136dp"
+            android:layout_height="19dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_item_repositories"
+            app:layout_constraintStart_toEndOf="@+id/tv_item_followers"
+            app:layout_constraintTop_toBottomOf="@+id/parent_following"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_item_followers"
+            android:layout_width="133dp"
+            android:layout_height="19dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parent_followers"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_item_repositories"
+            android:layout_width="136dp"
+            android:layout_height="19dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parent_repositories"
+            tools:ignore="SmallSp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="190dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                app:tabTextColor="@android:color/black" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:foregroundGravity="bottom"
+        app:fabSize="normal"
+        app:layout_anchor="@id/view_pager"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/ic_favorite_deactivate"
+        tools:ignore="VectorDrawableCompat" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
